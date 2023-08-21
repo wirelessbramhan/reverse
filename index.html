@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Re Verse</title>
+    <title>Unity WebGL Player | reVerse_URP</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=540></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Re Verse</div>
+        <div id="unity-build-title">reVerse_URP</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/reverse.loader.js";
+      var loaderUrl = buildUrl + "/reverseNew.loader.js";
       var config = {
-        dataUrl: buildUrl + "/reverse.data.unityweb",
-        frameworkUrl: buildUrl + "/reverse.framework.js.unityweb",
-        codeUrl: buildUrl + "/reverse.wasm.unityweb",
+        dataUrl: buildUrl + "/reverseNew.data",
+        frameworkUrl: buildUrl + "/reverseNew.framework.js",
+        codeUrl: buildUrl + "/reverseNew.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "IdleMind",
-        productName: "Re Verse",
-        productVersion: "1.0",
+        companyName: "DIlemInd",
+        productName: "reVerse_URP",
+        productVersion: "0.0.2",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "540px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
